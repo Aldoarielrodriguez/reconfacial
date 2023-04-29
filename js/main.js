@@ -63,7 +63,8 @@ video.addEventListener("playing", () => {
       );
       /*document.getElementById("age").innerText = `Age - ${interpolatedAge}`;
       document.getElementById("gender").innerText = `Gender - ${gender}`;*/
-      document.getElementById("emotion").innerText = `Emoción - ${emotion[0]}`;
+      const emocion= "Emoción -" + traduceEmocion(${emotion[0]});
+      document.getElementById("emotion").innerText = emocion;
     }
   }, 10);
 });
@@ -73,4 +74,30 @@ function interpolateAgePredictions(age) {
   const avgPredictedAge =
     predictedAges.reduce((total, a) => total + a) / predictedAges.length;
   return avgPredictedAge;
+}
+
+function traduceEmoción(emocionInglesa){
+  const emocion= emocionInglesa;
+  switch(emocion) {
+    case "happy":
+      return "feliz"
+      break;
+    case "sad":
+      return "triste"
+      break;
+    case "angry":
+      return "enojado"
+      break;
+    case "fearful":
+      return "con miedo"
+      break;
+      case "disgusted":
+      return "disgustado"
+      break;
+    case "surprised":
+      return "sorprendido"
+      break;
+    case "neutral":
+      return "neutral";
+}
 }
