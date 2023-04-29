@@ -64,7 +64,7 @@ video.addEventListener("playing", () => {
       /*document.getElementById("age").innerText = `Age - ${interpolatedAge}`;
       document.getElementById("gender").innerText = `Gender - ${gender}`;*/
       const emocion= emotion[0];
-      console.log("DETECTO"+emocion);
+      console.log(" DETECTO "+emocion + "Y TRADUCE A " +traduceEmocion(emocion));
       document.getElementById("emotion").innerText = `Emotion - ${emotion[0]}`;
     }
   }, 10);
@@ -77,7 +77,7 @@ function interpolateAgePredictions(age) {
   return avgPredictedAge;
 }
 
-function traduceEmoción(emocionInglesa){
+function traduceEmocion(emocionInglesa){
   const emocion= emocionInglesa;
   console.log("DETECTO"+emocion[0]);
   switch(emocion) {
