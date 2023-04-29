@@ -63,8 +63,8 @@ video.addEventListener("playing", () => {
       );
       /*document.getElementById("age").innerText = `Age - ${interpolatedAge}`;
       document.getElementById("gender").innerText = `Gender - ${gender}`;*/
-      const emocion= ${emotion[0]};
-      console.log(emocion);
+      const emocion= emotion[0];
+      console.log("DETECTO"+emocion);
       document.getElementById("emotion").innerText = `Emotion - ${emotion[0]}`;
     }
   }, 10);
