@@ -63,9 +63,9 @@ video.addEventListener("playing", () => {
       );
       /*document.getElementById("age").innerText = `Age - ${interpolatedAge}`;
       document.getElementById("gender").innerText = `Gender - ${gender}`;*/
-      const emocion= "Emoción -" + traduceEmocion(emotion[0]);
-      /*console.log(emocion);*/
-      document.getElementById("emotion").innerText = emocion;
+      const emocion= ${emotion[0]};
+      console.log(emocion);
+      document.getElementById("emotion").innerText = `Emotion - ${emotion[0]}`;
     }
   }, 10);
 });
